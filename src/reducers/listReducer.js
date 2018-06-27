@@ -25,13 +25,11 @@ export default function reducer(state = {List: [] },action)
                return {...state, List: arr};
             }
     
-            // case 'LIST_EDIT':
-            // {
-            //     var index=state.List.findIndex((listI)=>listI.id==action.payload);
-            //     state.List[index].completed=true;
-            //     console.log(state);
-            //     return {...state};
-            // }
+             case 'LIST_EDIT':
+             {
+                // var index=state.List.findIndex((listI)=>listI.id==action.payload);
+                // return {...state};
+             }
             default:
             return state;
         }
